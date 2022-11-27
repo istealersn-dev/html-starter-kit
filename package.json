@@ -1,0 +1,19 @@
+{
+  "name": "html-starter-kit",
+  "version": "1.0.0",
+  "description": "This is a starter kit designed to help beginners with HTML5 projects. It helps to reduce the base setup process instead jump on the dev process",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/istealersn-dev/html-starter-kit.git"
+  },
+  "author": "istealersn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/istealersn-dev/html-starter-kit/issues"
+  },
+  "homepage": "https://github.com/istealersn-dev/html-starter-kit#readme"
+}
