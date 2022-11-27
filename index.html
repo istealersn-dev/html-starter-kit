@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head prefix="og: http://ogp.me/ns#"> <!-- enable Open Graph: http://ogp.me/ -->
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{Enter the page title}</title>
 
-  <!-- Reference to stylesheet -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- specify viewport: https://developers.google.com/speed/docs/insights/ConfigureViewport -->
+    <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+  
+  <title>{Enter the page title}</title>
+  <meta name="description" content="{Please enter your meta description here}">
+  <meta name="keywords" content="a11y, accessibility, html5, boilerplate, template, aria, landmark roles, structure, banner, search, navigation, contentinfo">
+  <meta property="og:image" content="{Enter your Image URL for enabling Open Graph}">
+  <meta property="og:url"   content="{Enter your website URL}">
+   <!-- optionally add more Open Graph metadata: http://ogp.me/#metadata -->
+
+
+   <!-- Include stylesheets here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
   <link rel="stylesheet" href='./dist/css/main.min.css'>
 
 </head>
 <body>
-  <h1>HTML5 boilerplate code</h1>
-  <img src="https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/jackson-so-_t-l5FFH8VA-unsplash.jpg" alt="" loading="lazy">
-  <!-- Scripts -->
-  <!-- <script src="index.js"></script> -->
+
+  <header role="navigation">
+
+  </header>
+  <main id="content" role="main" tabindex="-1">
+    <!-- tabindex fixes focus issue, alternatively use generic script: http://www.nczonline.net/blog/2013/01/15/fixing-skip-to-content-links/ -->
+
+    <h1>HTML5 Boilerplate Code</h1>
+    <img 
+      src="https://www.freecodecamp.org/news/content/images/size/w1000/2021/07/jackson-so-_t-l5FFH8VA-unsplash.jpg" 
+      alt="" 
+      loading="lazy"
+      />
+  </main> 
+  <footer role="contentinfo">
+
+  </footer>
+  
+  <!-- Include scripts here. Concatenate & minify for performance: https://developers.google.com/speed/docs/insights/MinifyResources -->
+
 </body>
 </html>
