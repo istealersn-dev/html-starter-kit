@@ -1,0 +1,16 @@
+.container {
+    margin: auto;
+    width: 95%;
+
+    @include respond-to('medium') {
+        max-width: rem(700px);
+    }
+
+    @include respond-to('large') {
+        max-width: rem(900px);
+    }
+
+    @include respond-to('2xlarge') {
+        max-width: rem(1100px);
+    }
+}

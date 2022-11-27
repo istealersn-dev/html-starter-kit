@@ -1,0 +1,23 @@
+$breakpoints: (
+    'xsmall': (min-width: 375px),
+    'small': (min-width: 425px),
+    'medium': (min-width: 600px),
+    'large': (min-width: 1024px),
+    '2xlarge': (min-width: 1200px),
+    '3xlarge': (min-width: 1440px)
+);
+
+@mixin respond-to($name) {
+    // if the key exists in the map
+    @if map-has-key($breakpoints , $name ) {
+        // Prints media query based on the value
+        @media #{inspect(map-get($breakpoints, $name))} {
+            @content;
+        }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+        @warn "Invalid value, as it does not exist in `#{$breakpoints}`."
+    }
+}
